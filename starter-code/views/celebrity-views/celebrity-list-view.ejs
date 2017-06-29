@@ -1,0 +1,17 @@
+<h2> Celebs A-Z </h2>
+
+<ul>
+    <% blingList.forEach((celeb)=>{ %>
+    <li>
+      <h4> <%= celeb.name %> </h4>
+
+      <a href="/celebrity-views/<%= celeb._id %>/details">
+      View Details</a>
+      <br>
+    </li>
+    <%  }); %>
+</ul>
+
+<br>
+<a href="/">Back to Home</a>
+<a href="/celebrity-views/new"> Add a Celeb </a>
